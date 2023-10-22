@@ -1,0 +1,349 @@
+/* ----------------------   Estilos para la NavBar ------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,700&family=Work+Sans:wght@100;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,700;1,700&family=Work+Sans:wght@100;800&display=swap');
+
+ *{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+    margin: 0;
+    padding: 0;
+ }
+
+ html {
+    /*  Nos permite deslizar al hacer click en los links de la Navar*/
+    scroll-behavior: smooth;
+ }
+
+/*   Menu Navbar */
+.contenedor-header{
+    background: #1e2326 ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar{
+    max-width: auto ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #245454;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+
+}
+
+.logo a{
+    font-family: 'Roboto mono';
+    font-size: 40px;
+    color: #90f545;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    list-style: none ;
+}
+
+.menu a {
+    text-align: none;
+    color: #acfc69;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: white;
+    box-shadow: #1e2326;
+}
+
+.nav-responsive{
+    background-color: #1cb698;
+    color: #acfc69;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ----------------------   Estilos para el apartado del inicio ------------------------------------*/
+.inicio{
+    /* background: linear-gradient(to top, rgb(30,35,38,.8), rgb(30,35,38,1) ); */
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoperfilinicio{
+    margin-top: 40px;
+    border: 10px solid #07f51fb6;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.contenido-banner{
+    padding: 20px;
+    background-color: #14252ee0;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius:40px ;
+    border: #fff solid 1px;
+    
+}
+
+.contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Roboto';
+}
+
+.contenido-banner h2{
+    font-size: 29px;
+    font-weight: normal;
+}
+
+/* ----------------------   Estilos para el apartado de sobre mi ------------------------------------*/
+.contenido-banner1{
+    padding: 20px;
+    background-color: #14252ee0;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-radius:40px ;
+    border: #fff solid 1px;
+    opacity: 2;
+    margin-bottom: 60px;
+}
+
+.fotosobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sobremi{
+    background-color: #1e2326;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contenido-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gustos{
+    font-size: 30px;
+    font-family: "Roboto";
+    margin-bottom: 25px;
+}
+
+.fila{
+    display: flex;
+    justify-content: center;
+}
+
+.col{
+    width: 50%;
+}
+
+.contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interes {
+    width: 110px;
+    height: 90px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    font-family: "Roboto";
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.interes-span{
+    font-family: "Roboto";
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.emoji{ 
+    font-size:30px ;
+    margin-bottom: 10px;
+}
+
+.interes:hover{
+    background-color:#245454;
+    transform: translateY(-15px);
+}
+
+.descargar {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.descargar .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.descargar:hover .overlay{
+    width: 100%;
+}
+
+.verde{
+    color: rgb(142, 220, 25);
+}
+
+.rojo{
+    color: rgb(255, 87, 3);
+}
+
+.amarillo{
+    color: rgba(240, 248, 7, 0.974);
+}
+
+.fotoperfil{
+    width: 18%;
+    height: 12%;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+}
+
+/* ----------------------   Estilos para la seccion del Portafolio   -----------------------------------*/
+.portafolio{
+    font-size: 48px;
+    font-family: "Righteous";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portafolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portafolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    gap: 40px;
+}
+
+.portafolio .galeria .proyecto img{
+    width: 100%;
+    height: 320px;
+    display: block;
+}
+
+.portafolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(44, 187, 28, 0.8), rgba(44, 187, 28, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 10px;
+    letter-spacing: 5px;
+     opacity: 0; 
+}
+
+.portafolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portafolio .galeria .proyecto .overlay p{
+    font-size: 1.8rem;
+    padding: 8px;
+}
+
+.portafolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.portafolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/* ----------------------   Estilos para la seccion de las Tecnologias   -----------------------------------*/
+
+.lista{
+    width: 130px;
+    height: 110px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    font-family: "Roboto";
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    margin: 8px;
+    padding: 10px;
+    display: grid;
+}
+
+.lista:hover{
+    background-color:#3d5353;
+    transform: translateY(-20px);
+}
+
+.image{
+    width: 50px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin:10px;
+}
+
+
+/*   Titulos */
+.title{
+    text-align: center;
+    padding: 40px;
+    font-size: 10rem;
+    /* margin-top: 80px; */
+}
